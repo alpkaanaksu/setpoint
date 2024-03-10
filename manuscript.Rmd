@@ -1,0 +1,101 @@
+---
+title             : "Formal Model of the Set-Point Theory of Subjective Well-Being"
+shorttitle        : "Set-Point Theory of Subjective Well-Being"
+
+author: 
+  - name          : "Alp Kaan Aksu"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "Leopoldstraße 13"
+    email         : "a.aksu@campus.lmu.de"
+    role:         # Contributorship roles (e.g., CRediT, https://casrai.org/credit/)
+      - "Conceptualization"
+      - "Writing - Original Draft Preparation"
+      - "Writing - Review & Editing"
+
+affiliation:
+  - id            : "1"
+    institution   : "LMU Munich"
+
+authornote: |
+  Matriculation Number: 12607598
+
+abstract: |
+  There is research that shows...
+  
+  Here, we model the set point theory of subjective well being
+  
+  
+keywords          : ["happiness", "subjective well-being", "hedonic treadmill", "set-point theory"]
+wordcount         : "X"
+
+bibliography      : "r-references.bib"
+
+floatsintext      : no
+linenumbers       : no
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+classoption       : "man"
+output            : papaja::apa6_pdf
+---
+
+```{r setup, include = FALSE}
+library("papaja")
+r_refs("r-references.bib")
+
+source("VAST/VAST.R")
+```
+
+```{r analysis-preferences}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+```
+
+```{r construct-definitions, include=FALSE}
+swb <- construct("SWB")
+swb_set_point <- construct("SWBSetPoint")
+adaptation_rate <- construct("AdaptationRate")
+event <- construct("Event")
+```
+
+# Deneme
+```{r vast-display}
+VAST(swb, swb_set_point, adaptation_rate, event) |>
+  rel(swb_set_point %-c->% swb) |>
+  rel(adaptation_rate %-c->% swb) |>
+  rel(event %-c->% swb) |>
+  analysts("Alp") |> fimm() |>
+  render_vast()
+```
+
+
+# Methods
+We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
+
+## Participants
+
+## Material
+
+## Procedure
+
+## Data analysis
+We used `r cite_r("r-references.bib")` for all our analyses.
+
+
+# Results
+
+# Discussion
+
+
+\newpage
+
+# References
+
+::: {#refs custom-style="Bibliography"}
+:::
