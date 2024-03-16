@@ -1,0 +1,5 @@
+| **Construct** | **Scale Level** | **Range** | **Anchors** |
+| --------- | ----------- | ----- | ------- |
+| Subjective Well-Being | continuous | [0; 1] | 0 = absolutely not satisfied with life \newline 1 = maximal life satisfaction |
+| Subjective Well-Being Set Point | continuous | [0; 1] | 0 = absolutely not satisfied with life \newline 1 = maximal life satisfaction |
+| Appraisal of Life Event | continuous | [-1; 1] | -1 = negative \newline 0 = neutral \newline 1 = positive |

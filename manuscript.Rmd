@@ -29,9 +29,9 @@ abstract: |
 keywords          : ["happiness", "subjective well-being", "hedonic treadmill", "set-point theory"]
 wordcount         : "X"
 
-bibliography      : "r-references.bib"
+bibliography      : ["r-references.bib", "references.bib"]
 
-floatsintext      : no
+floatsintext      : yes
 linenumbers       : no
 draft             : no
 mask              : no
@@ -57,38 +57,69 @@ set.seed(42)
 knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
 
-```{r construct-definitions, include=FALSE}
-swb <- construct("SWB")
-swb_set_point <- construct("SWBSetPoint")
-adaptation_rate <- construct("AdaptationRate")
-event <- construct("Event")
+
+# Introduction
+
+One of the most important questions we might attempt to answer is how to live our lives and what makes life good. Trying to maximize our happiness is the naive answer we easily arrive at, we want to feel good, but *happiness* is an ambiguous word. Although it seems like all people tend to evaluate their lives and think about *happiness* [@veenhoven11HowUniversal2010], the understanding of *happiness*, its use and connotations vary across time and place [@oishiConceptsHappinessTime2013]. @dienerSubjectiveWellbeing1984 suggests the use of a scientific term: *subjective well-being* (SWB).
+
+## Subjective Well-Being
+According to @dienerSubjectiveWellbeing1984, SWB is the subjective global evaluation of life and consists of three components: (1) life satisfaction, (2) positive affect, (3) negative affect.
+
+## The Phenomenon: Hedonic Treadmill
+
+The observation, that people go back to a stable level of SWB after (major) life events is not new. @helsonAdaptationlevelTheoryExperimental1964 formulated the more general Adaptation Level Theory, stating that how people perceive stimuli is influenced by their past experiences. @brickman1971adaptation applied this idea to SWB for the first time and coined the term *hedonic treadmill*, which is still commonly used to refer to the phenomenon of returning to a base SWB level after life events [e.g. @czaikaMigrationAspirationsAre2014, manciniSteppingHedonicTreadmill2011], and @brickmanLotteryWinnersAccident provided first evidence for it. 
+
+## Our Goal
+
+We aim to formalize the Set-Point Theory of SWB as described by @dienerHedonicTreadmillRevising2006a, which explains the phenomenon of hedonic treadmill and tries to account for individual differences.
+
+# Robustness of the phenomenon
+
+@luhmannSubjectiveWellbeingAdaptation2012 has done a meta-analysis on adaptation to life events focusing on SWB. Evaluating the robustness of the studies focusing on the hedonic treadmill is difficult, since no randomized controlled trials are possible.
+
+## Empirical Evidence
+
+According to @luhmannSubjectiveWellbeingAdaptation2012, there is unequivocal evidence that the hedonic treadmill is a robust phenomenon.
+
+## Generalizability
+
+We use the UTOS-Framework by @cronbach1982designing to evaluate the generalizability of the findings.
+
+### Units
+Qualitatively different samples.
+
+### Treatment
+No randomized controlled trial. But focus on lots of different major life events.
+
+
+### Outcome
+Using affective (AWB) and cognitive well being (CWB) measure (for some life events), studies used different measures for different variable, e.g. for the measurement of CWB in the context of marriage, relationship satisfaction was used.
+
+### Setting
+A lot of studies were conducted by the same team. Most of the data comes from the German Socioeconomical Panel.
+
+All in all, there are reasonable evidence for generalizability of the Hedonic Treadmill phenomenon.
+
+# The Prototheory
+
+
+
+| Aspect | Generali
+
+# Model
+
+The central ideao of 
+
+# Implementation
+
+We made small changes to the theoretical model, in order to make it suitable for an implementation. We are making the following assumptions:
+
+- The construct of *Life Event* can be reduced to *Appraisal of the Life Event*, since only the latter is a part of the (following) relevant psychological processes.
+
+*VAST display of the model here*
+
+```{r child="./material/variable_definitions.Rmd"}
 ```
-
-# Deneme
-```{r vast-display}
-VAST(swb, swb_set_point, adaptation_rate, event) |>
-  rel(swb_set_point %-c->% swb) |>
-  rel(adaptation_rate %-c->% swb) |>
-  rel(event %-c->% swb) |>
-  analysts("Alp") |> fimm() |>
-  render_vast()
-```
-
-
-# Methods
-We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
-
-## Participants
-
-## Material
-
-## Procedure
-
-## Data analysis
-We used `r cite_r("r-references.bib")` for all our analyses.
-
-
-# Results
 
 # Discussion
 
