@@ -1,0 +1,50 @@
+<mxfile host="app.diagrams.net" modified="2024-03-13T23:37:13.056Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0" etag="691RHkfOdg18PphtQP2_" version="22.1.18" type="github">
+  <diagram name="Page-1" id="lDWctNavx0JwR5wB9KHT">
+    <mxGraphModel dx="984" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="uovrzQuPYYnQdHTZQtlD-1" target="uovrzQuPYYnQdHTZQtlD-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-4" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="uovrzQuPYYnQdHTZQtlD-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="uovrzQuPYYnQdHTZQtlD-1" target="uovrzQuPYYnQdHTZQtlD-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-10" value="i 1 ()" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="uovrzQuPYYnQdHTZQtlD-6">
+          <mxGeometry x="-0.075" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-1" value="SWB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-2" value="&quot;Subjective Well-Being&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="50" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-5" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="105" width="460" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uovrzQuPYYnQdHTZQtlD-7" target="uovrzQuPYYnQdHTZQtlD-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-7" value="Life Satisfaction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="253" y="119" width="116" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-8" value="Positive Affect" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="253" y="169" width="116" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-9" value="Negative Affect" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="253" y="219" width="116" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-11" value="" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="109" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
