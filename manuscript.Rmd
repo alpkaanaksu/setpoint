@@ -75,46 +75,58 @@ We aim to formalize the Set-Point Theory of SWB as described by @dienerHedonicTr
 
 # Robustness of the phenomenon
 
-@luhmannSubjectiveWellbeingAdaptation2012 has done a meta-analysis on adaptation to life events focusing on SWB. Evaluating the robustness of the studies focusing on the hedonic treadmill is difficult, since no randomized controlled trials are possible.
+@luhmannSubjectiveWellbeingAdaptation2012 has done a meta-analysis on adaptation to life events focusing on SWB. Evaluating the robustness of the studies focusing on SWB and adaptation is difficult, since it is impossible to manipulate life events experimentally and cross-sectional studies have a lack of internal validity [@luhmannSubjectiveWellbeingAdaptation2012]. All of the following statements are based on the meta-analysis by @luhmannSubjectiveWellbeingAdaptation2012.
 
 ## Empirical Evidence
 
-According to @luhmannSubjectiveWellbeingAdaptation2012, there is unequivocal evidence that the hedonic treadmill is a robust phenomenon.
+Studies focusing on the hedonic treadmill can not be adequatly characterized by single effect sizes, since the temporal development of SWB is of interest. So @luhmannSubjectiveWellbeingAdaptation2012 used a method that takes time into account. For each life event, they fitted a logarithmic model using the effects sizes reported in original studies. An adaptation is characterized by a change parameter, which is in the opposite direction of the initial reaction. For example, having a positive reaction (higher SWB) after a life event, then a negative change in SWB, indicates that an adaptation is taking place.
+
+Adaptations were observed for all life events, which means that the hedonic treadmill can be considered a robust phenomenon, but reduced internal validity due to the design of these studies makes it hard to evaluate.
 
 ## Generalizability
 
-We use the UTOS-Framework by @cronbach1982designing to evaluate the generalizability of the findings.
+We evaluate the generalizability of the findings guided by the UTOS framework  [@cronbach1982designing]. A strict application of the UTOS framework to the phenomenon at hand is not possible because of the non-experimental nature of the studies.
 
 ### Units
-Qualitatively different samples.
+In a lot of studies, the majority of the participants were females (65,4% across all events; for some life events like bereavement and divorce even 70+). More than half of the studies were from the US.
 
 ### Treatment
-No randomized controlled trial. But focus on lots of different major life events.
-
+Studies focus on different major life events, 8 of them were included in the meta-analysis.
 
 ### Outcome
-Using affective (AWB) and cognitive well being (CWB) measure (for some life events), studies used different measures for different variable, e.g. for the measurement of CWB in the context of marriage, relationship satisfaction was used.
+Using affective (AWB) and cognitive well being (CWB) measure (for some life events), studies used different measures for different variables, e.g. for the measurement of CWB in the context of marriage, relationship satisfaction was used.
 
 ### Setting
-A lot of studies were conducted by the same team. Most of the data comes from the German Socioeconomical Panel.
+aedasd
 
-All in all, there are reasonable evidence for generalizability of the Hedonic Treadmill phenomenon.
+Participants from diverse backgrounds are necessary for generalizability. Mixed (positive or negative) set of life event were analyzed, which is a good first sign for generalizability to different life events.
 
 # The Prototheory
 
+## Constructs
 
+*TODO*
 
-| Aspect | Generali
+- SWB: Definiton by Diener (include subtypes in the theoretical model but not in)
+  - AWB:
+  - CWB:
+- SWBSetPoint: SWB people return to
+- AdaptationRate: How fast the adaptation happens
+  - AdaptationRatePerson: Personenvariable
+  - AdaptationRateEvent: Hängt von InitialReaction ab
+- InitialReaction: Change in SWB directly after / at the time of the LifeEvent
+- LifeEvent: Status change
 
 # Model
 
-The central ideao of 
+The central idea of 
 
 # Implementation
 
 We made small changes to the theoretical model, in order to make it suitable for an implementation. We are making the following assumptions:
 
-- The construct of *Life Event* can be reduced to *Appraisal of the Life Event*, since only the latter is a part of the (following) relevant psychological processes.
+- The constructs of *Life Event* and *Initial Reaction* can be reduced to *Initial Reaction*, since only the latter is a part of the (following) relevant psychological processes.
+-
 
 *VAST display of the model here*
 
