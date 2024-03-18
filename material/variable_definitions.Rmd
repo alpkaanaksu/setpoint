@@ -1,5 +1,7 @@
 | **Construct** | **Scale Level** | **Range** | **Anchors** |
 | --------- | ----------- | ----- | ------- |
-| Subjective Well-Being | continuous | [0; 1] | 0 = absolutely not satisfied with life \newline 1 = maximal life satisfaction |
-| Subjective Well-Being Set Point | continuous | [0; 1] | 0 = absolutely not satisfied with life \newline 1 = maximal life satisfaction |
-| Appraisal of Life Event | continuous | [-1; 1] | -1 = negative \newline 0 = neutral \newline 1 = positive |
+| SWB | continuous | [0; 1] | 0 = absolutely not satisfied with life \newline 1 = maximal life satisfaction |
+| SWBSetPoint | continuous | [0; 1] | 0 = absolutely not satisfied with life \newline 1 = maximal life satisfaction |
+| InitialReaction | continuous | [-1; 1] | -1 = negative \newline 0 = neutral \newline 1 = positive |
+| AdaptationRate | continuous | [0; 1] | 0 = no adaptation \newline 1 = fastest possible adaptation |
+| AdaptationRatePerson | continous | [0; 1] | 0 = lowest possible tendency for adaptation \newline 1 = highest possible tendency for adaptation |

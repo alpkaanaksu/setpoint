@@ -53,25 +53,25 @@ source("VAST/VAST.R")
 
 ```{r analysis-preferences}
 # Seed for random number generation
-set.seed(42)
+set.seed(1256)
 knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
 
 
 # Introduction
 
-One of the most important questions we might attempt to answer is how to live our lives and what makes life good. Trying to maximize our happiness is the naive answer we easily arrive at, we want to feel good, but *happiness* is an ambiguous word. Although it seems like all people tend to evaluate their lives and think about *happiness* [@veenhoven11HowUniversal2010], the understanding of *happiness*, its use and connotations vary across time and place [@oishiConceptsHappinessTime2013]. @dienerSubjectiveWellbeing1984 suggests the use of a scientific term: *subjective well-being* (SWB).
+One of the most important questions we might attempt to answer is how to live our lives and what makes life good. Trying to maximize our happiness is the naive answer we easily arrive at, we want to feel good, and it is the self-evident reality all of us would agree on: being happy feels good. *Happiness* is an ambiguous word. Although it seems like all people tend to evaluate their lives and think about *happiness* [@veenhoven11HowUniversal2010], the understanding of *happiness*, its use and connotations vary across time and place [@oishiConceptsHappinessTime2013]. @dienerSubjectiveWellbeing1984 suggests the use of a scientific term: *subjective well-being* (SWB).
 
 ## Subjective Well-Being
-According to @dienerSubjectiveWellbeing1984, SWB is the subjective global evaluation of life and consists of three components: (1) life satisfaction, (2) positive affect, (3) negative affect.
+According to @dienerSubjectiveWellbeing1984, SWB is the subjective global evaluation of life and consists of three components: (1) life satisfaction, (2) positive affect, (3) negative affect (see the *Constructs* section for a precise definition).
 
 ## The Phenomenon: Hedonic Treadmill
 
-The observation, that people go back to a stable level of SWB after (major) life events is not new. @helsonAdaptationlevelTheoryExperimental1964 formulated the more general Adaptation Level Theory, stating that how people perceive stimuli is influenced by their past experiences. @brickman1971adaptation applied this idea to SWB for the first time and coined the term *hedonic treadmill*, which is still commonly used to refer to the phenomenon of returning to a base SWB level after life events [e.g. @czaikaMigrationAspirationsAre2014, manciniSteppingHedonicTreadmill2011], and @brickmanLotteryWinnersAccident provided first evidence for it. 
+The observation, that people go back to a stable neutral level of SWB after (major) life events is not new. @helsonAdaptationlevelTheoryExperimental1964 formulated the more general Adaptation Level Theory, stating that how people perceive stimuli is influenced by their past experiences. @brickman1971adaptation applied this idea to SWB for the first time and coined the term *hedonic treadmill*, which is still commonly used to refer to the phenomenon of returning to a base SWB level after life events [e.g. @czaikaMigrationAspirationsAre2014; @manciniSteppingHedonicTreadmill2011], and @brickmanLotteryWinnersAccident provided first evidence for it. 
 
 ## Our Goal
 
-We aim to formalize the Set-Point Theory of SWB as described by @dienerHedonicTreadmillRevising2006a, which explains the phenomenon of hedonic treadmill and tries to account for individual differences.
+We aim to formalize the *Set Point Theory of SWB* as described by @dienerHedonicTreadmillRevising2006a, which explains the phenomenon of hedonic treadmill and tries to account for individual differences.
 
 # Robustness of the phenomenon
 
@@ -79,7 +79,7 @@ We aim to formalize the Set-Point Theory of SWB as described by @dienerHedonicTr
 
 ## Empirical Evidence
 
-Studies focusing on the hedonic treadmill can not be adequatly characterized by single effect sizes, since the temporal development of SWB is of interest. So @luhmannSubjectiveWellbeingAdaptation2012 used a method that takes time into account. For each life event, they fitted a logarithmic model using the effects sizes reported in original studies. An adaptation is characterized by a change parameter, which is in the opposite direction of the initial reaction. For example, having a positive reaction (higher SWB) after a life event, then a negative change in SWB, indicates that an adaptation is taking place.
+Studies focusing on the hedonic treadmill can not be adequatly characterized by single effect sizes, since the temporal development of SWB is of interest. So @luhmannSubjectiveWellbeingAdaptation2012 used a method that takes time into account. For each life event, they fitted a logarithmic model using the effect sizes reported in original studies. An adaptation is characterized by a change parameter, which is in the opposite direction of the initial reaction. For example, having a positive reaction (higher SWB) after a life event, then a negative change in SWB, indicates that an adaptation is taking place.
 
 Adaptations were observed for all life events, which means that the hedonic treadmill can be considered a robust phenomenon, but reduced internal validity due to the design of these studies makes it hard to evaluate.
 
@@ -91,7 +91,7 @@ We evaluate the generalizability of the findings guided by the UTOS framework  [
 In a lot of studies, the majority of the participants were females (65,4% across all events; for some life events like bereavement and divorce even 70+). More than half of the studies were from the US.
 
 ### Treatment
-Studies focus on different major life events, 8 of them were included in the meta-analysis.
+Studies focus on different major life events, 8 life events were included in the meta-analysis.
 
 ### Outcome
 Using affective (AWB) and cognitive well being (CWB) measure (for some life events), studies used different measures for different variables, e.g. for the measurement of CWB in the context of marriage, relationship satisfaction was used.
@@ -101,37 +101,81 @@ aedasd
 
 Participants from diverse backgrounds are necessary for generalizability. Mixed (positive or negative) set of life event were analyzed, which is a good first sign for generalizability to different life events.
 
-# The Prototheory
+# The Theory
+
+@dienerHedonicTreadmillRevising2006a evaluated the empirical findings from the last decades and expanded the model of hedonic treadmill, creating the *Set Point Theory of SWB*. They made 5 adjustments:
+
+1. Set points can be non-neutral.
+2. There are inter-individual differences in set points.
+3. There are multiple set points: e.g. independent set  points for positive affect, negative affect or domain-specific well-being variables like work satisfaction, home satisfaction.
+4. Individual set points of SWB can and do change over time.
+5. There are inter-individual and intra-individual (based on the life event) differences in adaptation.
+
+The general idea is that people have (genetically inherited to an extent) set points of SWB they return to after big changes in their lives. In this formalization, we are only going to take adjustments (1), (2) and (5) into account, since (3) and (4) add non-negligible complexity to the model, which is out of the scope of this project.
 
 ## Constructs
 
-*TODO*
+### SWB
 
-- SWB: Definiton by Diener (include subtypes in the theoretical model but not in)
-  - AWB:
-  - CWB:
+![](material/setpoint_definitions_swb.drawio.png)
+
 - SWBSetPoint: SWB people return to
 - AdaptationRate: How fast the adaptation happens
   - AdaptationRatePerson: Personenvariable
-  - AdaptationRateEvent: Hängt von InitialReaction ab
 - InitialReaction: Change in SWB directly after / at the time of the LifeEvent
 - LifeEvent: Status change
 
-# Model
-
-The central idea of 
+## Model
 
 # Implementation
 
 We made small changes to the theoretical model, in order to make it suitable for an implementation. We are making the following assumptions:
 
-- The constructs of *Life Event* and *Initial Reaction* can be reduced to *Initial Reaction*, since only the latter is a part of the (following) relevant psychological processes.
--
+- We do not take anticipatory effects into account. SWB tends to change before major life events, if people know that something is going to happen. Before marriage as life event people can already anticipate their wedding, which leads to an increase in SWB.
+- AWB and CWB are summarized into a single SWB construct.
+- Life Event and Initial Reaction are reduced to Initial Reaction (appraisal of the situation), since only the latter is important for the following psychological processes.
 
 *VAST display of the model here*
 
 ```{r child="./material/variable_definitions.Rmd"}
 ```
+
+# Simulation
+```{r, include=FALSE}
+source("simulation/simulation.R")
+```
+
+## Positive Life Events
+
+```{r positive_life_event}
+plot_single_person(5, 0.2)
+```
+
+## Negative Life Events
+
+```{r negative_life_event}
+plot_single_person(5, -0.2)
+```
+
+## Testing the hypothesis
+
+```{r}
+n <- 2000
+years <- 5
+life_event <- 0.2
+
+results <- test_adaptation(n, years, life_event)
+p <- results$p.value
+```
+
+We calculated a paired sample t-test with `r n` simulated persons. They experienced a life event with an objective value of `r life_event`. We compared the SWB values just before the event and after `r years` years.
+
+$H_0$: Means of SWB values are the same before and `r years` after the event.
+
+$H_1$: Means of SWB values are different before and `r years` after the event.
+
+The t-test delivered a p-value of `r p`, which means that there are no differences in the SWB value before and 5 years after the event.
+
 
 # Discussion
 
