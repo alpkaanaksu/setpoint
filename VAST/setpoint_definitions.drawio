@@ -1,10 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2024-03-18T13:20:15.761Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0" etag="GZ0ap-SF9QYpB7nEelrl" version="24.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-18T13:40:31.702Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0" etag="t7xgnvZq2r_4teZ2M-PH" version="24.0.7" type="github">
   <diagram name="Page-1" id="lDWctNavx0JwR5wB9KHT">
     <mxGraphModel dx="895" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="uovrzQuPYYnQdHTZQtlD-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="uovrzQuPYYnQdHTZQtlD-1" target="uovrzQuPYYnQdHTZQtlD-2" edge="1">
+        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-28" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="40" y="60" width="703.64" height="433" as="geometry" />
+        </mxCell>
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="3ZIgrcCEoqgqzwrMyJDK-28" source="uovrzQuPYYnQdHTZQtlD-1" target="uovrzQuPYYnQdHTZQtlD-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="uovrzQuPYYnQdHTZQtlD-4" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="uovrzQuPYYnQdHTZQtlD-3" vertex="1" connectable="0">
@@ -12,7 +15,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uovrzQuPYYnQdHTZQtlD-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="1" source="uovrzQuPYYnQdHTZQtlD-1" target="uovrzQuPYYnQdHTZQtlD-5" edge="1">
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="3ZIgrcCEoqgqzwrMyJDK-28" source="uovrzQuPYYnQdHTZQtlD-1" target="uovrzQuPYYnQdHTZQtlD-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="uovrzQuPYYnQdHTZQtlD-10" value="i 1 (Diener, 1984)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="uovrzQuPYYnQdHTZQtlD-6" vertex="1" connectable="0">
@@ -20,16 +23,16 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uovrzQuPYYnQdHTZQtlD-1" value="SWB" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="40" y="293" width="120" height="60" as="geometry" />
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-1" value="SWB" style="rounded=0;whiteSpace=wrap;html=1;" parent="3ZIgrcCEoqgqzwrMyJDK-28" vertex="1">
+          <mxGeometry x="10" y="183" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uovrzQuPYYnQdHTZQtlD-2" value="&quot;Subjective Well-Being&quot;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="30" y="183" width="140" height="60" as="geometry" />
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-2" value="&quot;Subjective Well-Being&quot;" style="rounded=0;whiteSpace=wrap;html=1;" parent="3ZIgrcCEoqgqzwrMyJDK-28" vertex="1">
+          <mxGeometry y="73" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uovrzQuPYYnQdHTZQtlD-5" value="" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="290" y="225.5" width="360" height="195" as="geometry" />
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-5" value="" style="whiteSpace=wrap;html=1;rounded=0;" parent="3ZIgrcCEoqgqzwrMyJDK-28" vertex="1">
+          <mxGeometry x="260" y="115.5" width="360" height="195" as="geometry" />
         </mxCell>
-        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="uovrzQuPYYnQdHTZQtlD-7" target="3ZIgrcCEoqgqzwrMyJDK-9">
+        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="3ZIgrcCEoqgqzwrMyJDK-28" source="uovrzQuPYYnQdHTZQtlD-7" target="3ZIgrcCEoqgqzwrMyJDK-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3ZIgrcCEoqgqzwrMyJDK-11" value="c (D2)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3ZIgrcCEoqgqzwrMyJDK-10">
@@ -37,10 +40,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uovrzQuPYYnQdHTZQtlD-7" value="Life Satisfaction" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="520.8199999999999" y="236" width="116" height="40" as="geometry" />
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-7" value="Life Satisfaction" style="rounded=0;whiteSpace=wrap;html=1;" parent="3ZIgrcCEoqgqzwrMyJDK-28" vertex="1">
+          <mxGeometry x="490.81999999999994" y="126" width="116" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3ZIgrcCEoqgqzwrMyJDK-1" target="3ZIgrcCEoqgqzwrMyJDK-16">
+        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="3ZIgrcCEoqgqzwrMyJDK-28" source="3ZIgrcCEoqgqzwrMyJDK-1" target="3ZIgrcCEoqgqzwrMyJDK-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3ZIgrcCEoqgqzwrMyJDK-21" value="n (D1)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3ZIgrcCEoqgqzwrMyJDK-20">
@@ -48,7 +51,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3ZIgrcCEoqgqzwrMyJDK-1" target="3ZIgrcCEoqgqzwrMyJDK-22">
+        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="3ZIgrcCEoqgqzwrMyJDK-28" source="3ZIgrcCEoqgqzwrMyJDK-1" target="3ZIgrcCEoqgqzwrMyJDK-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3ZIgrcCEoqgqzwrMyJDK-24" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3ZIgrcCEoqgqzwrMyJDK-23">
@@ -56,10 +59,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-1" value="AWB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="300" y="333.5" width="83.64" height="40" as="geometry" />
+        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-1" value="AWB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3ZIgrcCEoqgqzwrMyJDK-28">
+          <mxGeometry x="270" y="223.5" width="83.64" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="uovrzQuPYYnQdHTZQtlD-8" target="3ZIgrcCEoqgqzwrMyJDK-1">
+        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="3ZIgrcCEoqgqzwrMyJDK-28" source="uovrzQuPYYnQdHTZQtlD-8" target="3ZIgrcCEoqgqzwrMyJDK-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3ZIgrcCEoqgqzwrMyJDK-4" value="c (D1)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3ZIgrcCEoqgqzwrMyJDK-2">
@@ -67,10 +70,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uovrzQuPYYnQdHTZQtlD-8" value="Positive Affect" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="520.8199999999999" y="306" width="116" height="40" as="geometry" />
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-8" value="Positive Affect" style="rounded=0;whiteSpace=wrap;html=1;" parent="3ZIgrcCEoqgqzwrMyJDK-28" vertex="1">
+          <mxGeometry x="490.81999999999994" y="196" width="116" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="uovrzQuPYYnQdHTZQtlD-9" target="3ZIgrcCEoqgqzwrMyJDK-1">
+        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="3ZIgrcCEoqgqzwrMyJDK-28" source="uovrzQuPYYnQdHTZQtlD-9" target="3ZIgrcCEoqgqzwrMyJDK-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3ZIgrcCEoqgqzwrMyJDK-7" value="c &quot;negative&quot; (D1)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3ZIgrcCEoqgqzwrMyJDK-6">
@@ -78,10 +81,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uovrzQuPYYnQdHTZQtlD-9" value="Negative Affect" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="520.8199999999999" y="366" width="116" height="40" as="geometry" />
+        <mxCell id="uovrzQuPYYnQdHTZQtlD-9" value="Negative Affect" style="rounded=0;whiteSpace=wrap;html=1;" parent="3ZIgrcCEoqgqzwrMyJDK-28" vertex="1">
+          <mxGeometry x="490.81999999999994" y="256" width="116" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3ZIgrcCEoqgqzwrMyJDK-9" target="3ZIgrcCEoqgqzwrMyJDK-13">
+        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="3ZIgrcCEoqgqzwrMyJDK-28" source="3ZIgrcCEoqgqzwrMyJDK-9" target="3ZIgrcCEoqgqzwrMyJDK-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3ZIgrcCEoqgqzwrMyJDK-15" value="n (D2)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3ZIgrcCEoqgqzwrMyJDK-14">
@@ -89,7 +92,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3ZIgrcCEoqgqzwrMyJDK-9" target="3ZIgrcCEoqgqzwrMyJDK-25">
+        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="3ZIgrcCEoqgqzwrMyJDK-28" source="3ZIgrcCEoqgqzwrMyJDK-9" target="3ZIgrcCEoqgqzwrMyJDK-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="3ZIgrcCEoqgqzwrMyJDK-27" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3ZIgrcCEoqgqzwrMyJDK-26">
@@ -97,20 +100,20 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-9" value="CWB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="300" y="236" width="83.64" height="40" as="geometry" />
+        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-9" value="CWB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3ZIgrcCEoqgqzwrMyJDK-28">
+          <mxGeometry x="270" y="126" width="83.64" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-13" value="&quot;presence of pleasant affect (e.g., feelings of happiness) and the absence of unpleasant affect (e.g., depressed mood)&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="383.64" y="170" width="350" height="40" as="geometry" />
+        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-13" value="&quot;presence of pleasant affect (e.g., feelings of happiness) and the absence of unpleasant affect (e.g., depressed mood)&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3ZIgrcCEoqgqzwrMyJDK-28">
+          <mxGeometry x="353.64" y="60" width="350" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-16" value="&quot;presence of pleasant affect (e.g., feelings of happiness) and the absence of unpleasant affect (e.g., depressed mood)&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="443" width="350" height="40" as="geometry" />
+        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-16" value="&quot;presence of pleasant affect (e.g., feelings of happiness) and the absence of unpleasant affect (e.g., depressed mood)&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3ZIgrcCEoqgqzwrMyJDK-28">
+          <mxGeometry x="340" y="333" width="350" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-22" value="&quot;Affective Well-Being&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="503" width="140" height="40" as="geometry" />
+        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-22" value="&quot;Affective Well-Being&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3ZIgrcCEoqgqzwrMyJDK-28">
+          <mxGeometry x="340" y="393" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-25" value="&quot;Cognitive Well-Being&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="383.64" y="110" width="140" height="40" as="geometry" />
+        <mxCell id="3ZIgrcCEoqgqzwrMyJDK-25" value="&quot;Cognitive Well-Being&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="3ZIgrcCEoqgqzwrMyJDK-28">
+          <mxGeometry x="353.64" width="140" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
