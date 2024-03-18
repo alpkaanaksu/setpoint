@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-18T16:46:27.113Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0" etag="tOMbNQAHWteWWH_169uJ" version="24.0.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2024-03-18T16:54:23.422Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0" etag="o23spjyko2AHoJMhbxgo" version="24.0.7" type="github" pages="4">
   <diagram name="SWB" id="lDWctNavx0JwR5wB9KHT">
     <mxGraphModel dx="895" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -127,7 +127,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="kpa7ql_yANOzpYV5pB9e" name="Theory">
-    <mxGraphModel dx="820" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="757" dy="487" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -182,11 +182,16 @@
         <mxCell id="A-w8TeFKZ6NLx6qVMdYu-12" value="&lt;span title=&quot;Greek-language text&quot;&gt;&lt;span lang=&quot;el&quot;&gt;α&lt;/span&gt;&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="240" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="A-w8TeFKZ6NLx6qVMdYu-16" value="&lt;span title=&quot;Greek-language text&quot;&gt;&lt;span lang=&quot;el&quot;&gt;α: | SWB - SWBSetPoint |&lt;br&gt;&lt;/span&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="A-w8TeFKZ6NLx6qVMdYu-16" value="&lt;span title=&quot;Greek-language text&quot;&gt;&lt;span lang=&quot;el&quot;&gt;α: SWBSetPoint - SWB&lt;br&gt;&lt;/span&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="335" y="290" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="g48SRaJ_zTbqPzLMM2-U-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="g48SRaJ_zTbqPzLMM2-U-1" target="A-w8TeFKZ6NLx6qVMdYu-6">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g48SRaJ_zTbqPzLMM2-U-13" value="c" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="g48SRaJ_zTbqPzLMM2-U-4">
+          <mxGeometry x="-0.1556" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="g48SRaJ_zTbqPzLMM2-U-1" value="AdaptationRate" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="360" y="80" width="120" height="40" as="geometry" />
@@ -208,8 +213,8 @@
         <mxCell id="g48SRaJ_zTbqPzLMM2-U-8" value="AdaptationRatePerson" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="620" y="80" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="g48SRaJ_zTbqPzLMM2-U-12" value="&lt;span title=&quot;Greek-language text&quot;&gt;&lt;span lang=&quot;el&quot;&gt;β: ln(DeltaSWB) + AdaptationRatePerson&lt;br&gt;&lt;/span&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="470" y="20" width="118" height="30" as="geometry" />
+        <mxCell id="g48SRaJ_zTbqPzLMM2-U-12" value="&lt;span title=&quot;Greek-language text&quot;&gt;&lt;span lang=&quot;el&quot;&gt;β: 0.5 * (-DeltaSWB) * AdaptationRatePerson&lt;br&gt;&lt;/span&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="40" width="260" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
