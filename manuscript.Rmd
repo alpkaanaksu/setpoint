@@ -75,11 +75,11 @@ We aim to formalize the *Set Point Theory of SWB* as described by @dienerHedonic
 
 # Robustness of the phenomenon
 
-@luhmannSubjectiveWellbeingAdaptation2012 has done a meta-analysis on adaptation to life events focusing on SWB. Evaluating the robustness of the studies focusing on SWB and adaptation is difficult, since it is impossible to manipulate life events experimentally and cross-sectional studies have a lack of internal validity [@luhmannSubjectiveWellbeingAdaptation2012]. All of the following statements are based on the meta-analysis by @luhmannSubjectiveWellbeingAdaptation2012.
+@luhmannSubjectiveWellbeingAdaptation2012 has done a meta-analysis on adaptation to life events focusing on SWB, they included 313 studies focusing on 8 different major life events. The total number of participants was 65911. Evaluating the robustness of the studies focusing on SWB and adaptation is difficult, since it is impossible to manipulate life events experimentally and cross-sectional studies have a lack of internal validity [@luhmannSubjectiveWellbeingAdaptation2012]. All of the following statements are based on the meta-analysis by @luhmannSubjectiveWellbeingAdaptation2012.
 
 ## Empirical Evidence
 
-Studies focusing on the hedonic treadmill can not be adequatly characterized by single effect sizes, since the temporal development of SWB is of interest. So @luhmannSubjectiveWellbeingAdaptation2012 used a method that takes time into account. For each life event, they fitted a logarithmic model using the effect sizes reported in original studies. An adaptation is characterized by a change parameter, which is in the opposite direction of the initial reaction. For example, having a positive reaction (higher SWB) after a life event, then a negative change in SWB, indicates that an adaptation is taking place.
+Studies focusing on the hedonic treadmill can not be adequately characterized by single effect sizes, since the temporal development of SWB is of interest. So @luhmannSubjectiveWellbeingAdaptation2012 used a method that takes time into account. For each life event, they fitted a logarithmic model using the effect sizes reported in original studies. An adaptation is characterized by a change parameter, which is in the opposite direction of the initial reaction. For example, having a positive reaction (higher SWB) after a life event, then a negative change in SWB, indicates that an adaptation is taking place.
 
 Adaptations were observed for all life events, which means that the hedonic treadmill can be considered a robust phenomenon, but reduced internal validity due to the design of these studies makes it hard to evaluate.
 
@@ -113,34 +113,34 @@ Participants from diverse backgrounds are necessary for generalizability. Mixed 
 
 The general idea is that people have (genetically inherited to an extent) set points of SWB they return to after big changes in their lives. In this formalization, we are only going to take adjustments (1), (2) and (5) into account, since (3) and (4) add non-negligible complexity to the model, which is out of the scope of this project.
 
+The visual representations of construct definitions and their relationships with each other according to the theory are done using VAST [@leisingVisualArgumentStructure2023]. 
+
 ## Constructs
+
+The central constructs of the *Set Point Theory* are SWB, set point of SWB, life event, initial reaction and adaptation rate. We added the constructs emotional reactivity, and personal adaptation rate. The VAST displays for the construct definitions are shown below. 
 
 ### SWB
 
-![](material/setpoint_definitions_swb.drawio.png)
+![](material/setpoint_definitions-SWB.drawio.png)
 
-- SWBSetPoint: SWB people return to
-- AdaptationRate: How fast the adaptation happens
-  - AdaptationRatePerson: Personenvariable
-- InitialReaction: Change in SWB directly after / at the time of the LifeEvent
-- LifeEvent: Status change
+### Other relevant constructs
 
-## Model
+![](material/setpoint_definitions-Others.drawio.png)
 
-# Implementation
+We made small changes to the theoretical model, in order to make it suitable for an implementation. 
 
-We made small changes to the theoretical model, in order to make it suitable for an implementation. We are making the following assumptions:
+@luhmannSubjectiveWellbeingAdaptation2012 clearly state that the adaptation after negative life events is slower. This would complicate the model and it is out of the scope of this project.
 
-- We do not take anticipatory effects into account. SWB tends to change before major life events, if people know that something is going to happen. Before marriage as life event people can already anticipate their wedding, which leads to an increase in SWB.
-- AWB and CWB are summarized into a single SWB construct.
-- Life Event and Initial Reaction are reduced to Initial Reaction (appraisal of the situation), since only the latter is important for the following psychological processes.
+We also do not take anticipatory effects into account. SWB tends to change before major life events, if people know that something is going to happen. For example, before their marriage people can already anticipate their wedding, which leads to an increase in SWB. This is very well reflected in the empirical findings but it is not a part of the *Set Point Theory*.
 
-*VAST display of the model here*
+Empirical findings show that AWB and CWB are affected separately by life events, their adaptations are also independent. @dienerHedonicTreadmillRevising2006a also have this in their models, as extension (3) but they do not state how separate well-being variables are affected by life events, how different their set points are, and what they change in the adaptation process.
+
+![](material/setpoint_definitions-Theory.drawio.png)
 
 ```{r child="./material/variable_definitions.Rmd"}
 ```
 
-# Simulation
+# Simulation and Evaluation of the Model
 ```{r, include=FALSE}
 source("simulation/simulation.R")
 ```
@@ -186,3 +186,10 @@ The t-test delivered a p-value of `r p`, which means that there are no differenc
 
 ::: {#refs custom-style="Bibliography"}
 :::
+
+# (APPENDIX) Appendix {-}
+
+# Statements
+
+```{r child="./material/statements.Rmd"}
+```

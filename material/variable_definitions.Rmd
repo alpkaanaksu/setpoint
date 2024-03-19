@@ -2,6 +2,8 @@
 | --------- | ----------- | ----- | ------- |
 | SWB | continuous | [0; 1] | 0 = absolutely not satisfied with life \newline 1 = maximal life satisfaction |
 | SWBSetPoint | continuous | [0; 1] | 0 = absolutely not satisfied with life \newline 1 = maximal life satisfaction |
+| LifeEvent | continous | [-1; 1] | -1 = objectively very negative \newline 0 = objectively neutral \newline 1 = objectively very positive |
+| EmotionalReactivity | continuous | [0; 1] | 0 = emotional state is not influenced by external events \newline 1 = external events influence emotional states very strongly |
 | InitialReaction | continuous | [-1; 1] | -1 = negative \newline 0 = neutral \newline 1 = positive |
 | AdaptationRate | continuous | [0; 1] | 0 = no adaptation \newline 1 = fastest possible adaptation |
 | AdaptationRatePerson | continous | [0; 1] | 0 = lowest possible tendency for adaptation \newline 1 = highest possible tendency for adaptation |
