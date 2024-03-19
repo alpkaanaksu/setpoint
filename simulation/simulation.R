@@ -1,10 +1,10 @@
-
-# A person is represented by a list:
-# list(emotional_reactivity, adaptation_rate, SWB_set_point)
-
-# ====== Helpers ======
+# ====== Packages ======
 
 library(dplyr)
+library(data.table)
+library(ggplot2)
+
+# ====== Helpers ======
 
 #' A generic logistic function
 #' 
@@ -65,18 +65,26 @@ delta_SWB <- function (SWB, SWB_set_point) {
     SWB - SWB_set_point
 }
 
+#' Calculate the adaptation rate for a specific person at a specific delta SWB
+#' 
+#' @param delta_SWB_arg Current delta SWB
+#' @param adaptation_rate_person Personal adaptation rate
 adaptation_rate <- function(delta_SWB_arg, adaptation_rate_person) {
   (-delta_SWB_arg) * adaptation_rate_person
 }
 
+#' Calculate the SWB given current SWB and adaptation rate
+#' 
+#' @param SWB Current SWB
+#' @param adaptation_rate Adaptation rate at the moment
 SWB <- function (SWB, adaptation_rate) {
   limited_linear(SWB + adaptation_rate)
 }
 
-event <- function(persons, life_event) {
-  persons[, SWB := initial_reaction(life_event, emotional_reactivity) + SWB]
-}
 
+#' Calculate the SWB for a given person for the next iteration
+#' 
+#' @param person A list representing a person
 SWB_chain <- function(person) {
   delta_SWB_var <- delta_SWB(person$SWB, person$SWB_set_point)
   adaptation_rate_var <- adaptation_rate(delta_SWB_var, person$adaptation_rate)
@@ -86,6 +94,18 @@ SWB_chain <- function(person) {
   person
 }
 
+#' Calculate the SWB for multiple persons after a life event
+#' 
+#' @param persons A data.table containing the persons
+#' @param life_event Objective value of a life event
+event <- function(persons, life_event) {
+  persons[, SWB := initial_reaction(life_event, emotional_reactivity) + SWB]
+}
+
+#' Simulate an adaptation
+#' 
+#' @param persons A data.table containing the persons
+#' @param years Years to wait
 adaptation <- function(persons, years) {
   for(i in seq_len(years)) {
     # Take current row (.SD) as list and use it for the SWB_chain function
@@ -96,9 +116,16 @@ adaptation <- function(persons, years) {
 
 # ====== Simulation ======
 
-library("data.table")
+# A person is represented by a list:
+# list(emotional_reactivity, adaptation_rate, SWB_set_point)
 
+#' Run a t-test using a simulated group
+#' 
+#' @param n Sample size
+#' @param years Years to wait after the life event
+#' @param life_event Objective value of the life event
 test_adaptation <- function (n, years, life_event) {
+  # Simulate data
   data <- data.table(
     emotional_reactivity = runif(n, 0.5, 1),
     adaptation_rate = runif(n, 0.4, 0.6),
@@ -107,28 +134,27 @@ test_adaptation <- function (n, years, life_event) {
   
   data[, SWB := SWB_set_point]
   
+  # Pre measurement
   SWB_pre <- data$SWB
   
+  # Simulate waiting
   data |>
     event(0.2) |>
     adaptation(years)
   
+  # Post measurement
   SWB_post <- data$SWB
   
   # Test
-  
   t.test(SWB_pre, SWB_post)
 }
 
-# Plot a single person
-
-plot_single_person <- function (years, life_event) {
-  person <- list(
-    emotional_reactivity = runif(1, 0.5, 1),
-    adaptation_rate = runif(1, 0.4, 0.6),
-    SWB_set_point = runif(1, 0, 1)
-  )
-  
+#' Plot a single person
+#' 
+#' @param person A list representing a person
+#' @param years Years to wait after the life event
+#' @param life_event Objective value of the life event
+plot_single_person <- function (person, years, life_event) {
   person$SWB <- person$SWB_set_point + initial_reaction(life_event, person$emotional_reactivity)
   
   person_data <- data.table() |> rbind(person)
@@ -140,8 +166,6 @@ plot_single_person <- function (years, life_event) {
   
   person_data[, year := 0:years]
   
-  library(ggplot2)
-  
   person_data |>
     ggplot(aes(year, SWB)) +
     geom_point() +
@@ -150,7 +174,4 @@ plot_single_person <- function (years, life_event) {
     geom_vline(xintercept = 0, color = "gray") +
     annotate("text", x = 0, y = person$SWB_set_point, label = "Personal Set Point", hjust = 0, vjust = 1.5, color = "blue")
 }
-
-test_adaptation(1000, 5, -0.2)
-plot_single_person(5, -1)
 

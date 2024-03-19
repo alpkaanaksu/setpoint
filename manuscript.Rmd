@@ -148,13 +148,25 @@ source("simulation/simulation.R")
 ## Positive Life Events
 
 ```{r positive_life_event}
-plot_single_person(5, 0.2)
+person <- list(
+  emotional_reactivity = 0.5,
+  adaptation_rate = 0.5,
+  SWB_set_point = 0.5
+)
+
+plot_single_person(person, 5, 0.2)
 ```
 
 ## Negative Life Events
 
 ```{r negative_life_event}
-plot_single_person(5, -0.2)
+person <- list(
+  emotional_reactivity = 0.5,
+  adaptation_rate = 0.5,
+  SWB_set_point = 0.5
+)
+
+plot_single_person(person, 5, -0.2)
 ```
 
 ## Testing the hypothesis
