@@ -21,9 +21,7 @@ authornote: |
   Matriculation Number: 12607598
 
 abstract: |
-  There is research that shows...
-  
-  Here, we model the set point theory of subjective well being
+  We attempted to model the Set Point Theory of Subjective Well-Being by Diener et al. (2006). We used VAST by Leising et al. (2023) to visualize definitions and relationships of constructs. We finally implemented the resulting mathematical model using the programming language R.
   
   
 keywords          : ["happiness", "subjective well-being", "hedonic treadmill", "set-point theory"]
@@ -48,7 +46,7 @@ output            : papaja::apa6_pdf
 library("papaja")
 r_refs("r-references.bib")
 
-source("VAST/VAST.R")
+source("simulation/simulation.R")
 ```
 
 ```{r analysis-preferences}
@@ -97,7 +95,7 @@ Studies focus on different major life events, 8 life events were included in the
 Using affective (AWB) and cognitive well being (CWB) measure (for some life events), studies used different measures for different variables, e.g. for the measurement of CWB in the context of marriage, relationship satisfaction was used.
 
 ### Setting
-aedasd
+No clear statements are possible based on the meta-analysis.
 
 Participants from diverse backgrounds are necessary for generalizability. Mixed (positive or negative) set of life event were analyzed, which is a good first sign for generalizability to different life events.
 
@@ -140,12 +138,119 @@ Empirical findings show that AWB and CWB are affected separately by life events,
 ```{r child="./material/variable_definitions.Rmd"}
 ```
 
+\newpage
+
+## Relationships between Constructs
+
+### InitialReaction
+
+The calculation of the initial reaction is based on the objective value of the life event and the emotional reactivity of the person.
+
+$$\text{InitialReaction} = \text{LifeEvent} \times \text{EmotionalReactivity}$$
+```{r}
+# Define emotional reactivity sequence
+emotional_reactivity_seq <- seq(0, 1, 0.2)
+
+# Create a grid for plotting
+par(mfrow = c(2, 3))  # 2 rows, 3 columns
+
+# Plot the function for each emotional reactivity value
+for (i in 1:length(emotional_reactivity_seq)) {
+    emotional_reactivity <- emotional_reactivity_seq[i]
+    life_events <- seq(-1, 1, length.out = 100)  # Generating life events in the range [-1, 1]
+    reactions <- initial_reaction(life_events, emotional_reactivity)  # Calculating reactions
+    plot(life_events, reactions, type = 'l', main = paste("EmotionalReactivity:", emotional_reactivity),
+         xlab = "LifeEvent", ylab = "InitialReaction")
+}
+```
+
+### DeltaSWB
+
+DeltaSWB is simply the difference between the personal SWB set point and the current SWB.
+
+$$\text{DeltaSWB} = \text{SWB} - \text{SWBSetPoint}$$
+
+```{r}
+# Define SWB_set_point sequence
+SWB_set_points <- seq(0, 1, by = 0.2)
+
+# Create a grid for plotting
+par(mfrow = c(2, 3))  # 2 rows, 3 columns
+
+# Plot the function for each SWB_set_point
+for (i in 1:length(SWB_set_points)) {
+    SWB_set_point <- SWB_set_points[i]
+    SWB_values <- seq(0, 1, length.out = 100)  # Generating SWB values
+    deltas <- delta_SWB(SWB_values, SWB_set_point)  # Calculating deltas
+    plot(SWB_values, deltas, type = 'l', main = paste("SWBSetPoint:", SWB_set_point),
+         xlab = "SWB", ylab = "DeltaSWB")
+}
+```
+
+### Adaptation Rate
+
+AdaptationRate is based on the interaction of DeltaSWB and AdaptationRatePerson. We want to have a logarithmic result at the end [@luhmannSubjectiveWellbeingAdaptation2012], using the current DeltaSWB for each iteration gives us exactly that. The adaptation should happen in the opposite direction of the InitialReaction, so we start by negating DeltaSWB (-DeltaSWB). According to @dienerHedonicTreadmillRevising2006a, there are individual differences in the adaptation rate, so we multiply the DeltaSWB based change with AdaptationRatePerson.
+
+$$\text{AdaptationRate} = -\text{DeltaSWB} \times \text{AdaptationRatePerson}$$
+```{r}
+# Define adaptation_rate_person sequence
+adaptation_rates <- seq(0, 1, by = 0.2)
+
+# Create a grid for plotting
+par(mfrow = c(2, 3))  # 2 rows, 3 columns
+
+# Plot the function for each adaptation_rate_person value
+for (i in 1:length(adaptation_rates)) {
+    adaptation_rate_person <- adaptation_rates[i]
+    delta_SWB_values <- seq(-1, 1, length.out = 100)  # Generating delta_SWB values
+    rates <- adaptation_rate(delta_SWB_values, adaptation_rate_person)  # Calculating adaptation rates
+    plot(delta_SWB_values, rates, type = 'l', main = paste("AdaptationRatePerson:", adaptation_rate_person),
+         xlab = "DeltaSWB", ylab = "AdaptationRate")
+}
+```
+
+### SWB
+
+For the calculation of SWB, we just add AdaptationRate to the previous SWB value. We also limit the resulting values to the valid range for SWB, which is [0, 1].
+
+$$
+\text{SWB}_{\text{next}}(x) = \begin{cases} 
+      0 & \text{if } (\text{SWB}_{\text{old}} + \text{AdaptationRate}) < 0 \\
+      \text{SWB}_{\text{old}} + \text{AdaptationRate} & \text{if } 0 < (\text{SWB}_{\text{old}} + \text{AdaptationRate}) < 1 \\
+      1 & \text{if } (\text{SWB}_{\text{old}} + \text{AdaptationRate}) > 1
+\end{cases}
+$$
+```{r}
+# Generate SWB sequence
+SWB_values <- seq(0, 1, by = 0.2)
+
+# Define adaptation_rate sequence
+adaptation_rates <- seq(-1, 1, by = 0.2)
+
+# Create a grid for plotting
+par(mfrow = c(2, 3))  # 2 rows, 3 columns
+
+# Plot the function for each adaptation_rate
+for (i in 1:length(adaptation_rates)) {
+    adaptation_rate <- adaptation_rates[i]
+    SWB_result <- SWB(SWB_values, adaptation_rate)
+    plot(SWB_values, SWB_result, type = 'l', main = paste("Adaptation Rate:", adaptation_rate),
+         xlab = "SWB", ylab = "SWB with Adaptation")
+}
+
+```
+
 # Simulation and Evaluation of the Model
-```{r, include=FALSE}
+
+We implemented the model using the programming language R [@R-base]. 
+
+```{r include=FALSE}
 source("simulation/simulation.R")
 ```
 
 ## Positive Life Events
+
+We simulated the adaptation process of a person with an emotional reactivity of 0.5, an adaptation rate of 0.5 and a set point of 0.5. The objective value of the life event was set to 0.2. Following plot is a visualization of the adaptation process during the following 5 years after the event.
 
 ```{r positive_life_event}
 person <- list(
@@ -159,6 +264,8 @@ plot_single_person(person, 5, 0.2)
 
 ## Negative Life Events
 
+We simulated the adaptation process of a person with an emotional reactivity of 0.5, an adaptation rate of 0.5 and a set point of 0.5. The objective value of the life event was set to -0.2. Following plot is a visualization of the adaptation process during the following 5 years after the event.
+
 ```{r negative_life_event}
 person <- list(
   emotional_reactivity = 0.5,
@@ -169,7 +276,7 @@ person <- list(
 plot_single_person(person, 5, -0.2)
 ```
 
-## Testing the hypothesis
+## Do People Return to the Same SWB after 5 Years?
 
 ```{r}
 n <- 2000
@@ -190,6 +297,12 @@ The t-test delivered a p-value of `r p`, which means that there are no differenc
 
 
 # Discussion
+
+I think TCM and other approaches we had in general worked reasonably well for the Set Point Theory. But in order to be able to model all kinds of theories, we need a lot more tools than we had a chance to learn about during Empra. The Set Point Theory and Hedonic Treadmill were pushing the limits of the tools and frameworks we learned about. Because of the impossibility of experimental studies in this field of research, using our methodology for evaluating the robustness of the phenomenon was really hard. 
+
+The hardest step for me was getting to understand the concepts. I had to read a lot in order to understand what it was all about. I would need a lot more time to really understand everything. The meta-analysis I chose also used more complex statistical methods than I am used to, I decided to use it without understanding everything. My theory paper was really clear about the revisions to the previous ideas and the meta-analysis had definitions in the constructs in it. But none of the papers I read describe the exact processes behind adaptation, so I had to add lots of new constructs like EmotionalReactivity or DeltaSWB to make it work as described in the papers I read.
+
+One point I had problems with was defining constructs. "Do we have to define all words that are present in definitions" was an important questions. If you try to do it, it ends in an infinite regress, where we need more and more definitions. I decided to leave out definitions of "Positive Affect", "Negative Affect" and "Life Satisfaction". Defining "Life Satisfaction" would require a completely different literature review, I would happily go down the rabbit hole looking to understand life satisfaction, but it would be too much for this course.
 
 
 \newpage
