@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-19T16:50:58.085Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0" etag="BBK6OxSpk5HH9TLm5N9A" version="24.0.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2024-03-19T18:42:30.704Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0" etag="ZC1B8XLF_3wLcZX7h6eq" version="24.0.7" type="github" pages="4">
   <diagram name="SWB" id="lDWctNavx0JwR5wB9KHT">
     <mxGraphModel dx="895" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -119,15 +119,154 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ACvuybFyy6VrjY2wuc-I" name="Others">
-    <mxGraphModel dx="984" dy="633" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1230" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8yQ6yAZtfiq2OTEZlgxI-1" target="8yQ6yAZtfiq2OTEZlgxI-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-4" value="n (L)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8yQ6yAZtfiq2OTEZlgxI-3">
+          <mxGeometry x="0.05" relative="1" as="geometry">
+            <mxPoint x="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8yQ6yAZtfiq2OTEZlgxI-1" target="8yQ6yAZtfiq2OTEZlgxI-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-8" value="c" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8yQ6yAZtfiq2OTEZlgxI-7">
+          <mxGeometry x="-0.15" y="-1" relative="1" as="geometry">
+            <mxPoint x="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-1" value="SWBSetPoint" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-2" value="&quot;The level of SWB people return to after life events&quot;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="110" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-6" value="SWB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8yQ6yAZtfiq2OTEZlgxI-9" target="8yQ6yAZtfiq2OTEZlgxI-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-27" value="c" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8yQ6yAZtfiq2OTEZlgxI-25">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8yQ6yAZtfiq2OTEZlgxI-9" target="8yQ6yAZtfiq2OTEZlgxI-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-35" value="n (F3)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8yQ6yAZtfiq2OTEZlgxI-30">
+          <mxGeometry x="-0.0393" y="-2" relative="1" as="geometry">
+            <mxPoint x="-2" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="quCtGIW3eCMJiClN3m90-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8yQ6yAZtfiq2OTEZlgxI-9" target="quCtGIW3eCMJiClN3m90-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="quCtGIW3eCMJiClN3m90-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8yQ6yAZtfiq2OTEZlgxI-9" target="quCtGIW3eCMJiClN3m90-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="quCtGIW3eCMJiClN3m90-5" value="c (F3)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="quCtGIW3eCMJiClN3m90-4">
+          <mxGeometry x="0.2718" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-9" value="LifeEvent" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="290" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8yQ6yAZtfiq2OTEZlgxI-10" target="8yQ6yAZtfiq2OTEZlgxI-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-13" value="n (K)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8yQ6yAZtfiq2OTEZlgxI-12">
+          <mxGeometry x="-0.025" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-10" value="AdaptationRate" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="40" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-11" value="&lt;div&gt;&quot;How fast the adaptation to life events happens&quot;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="8yQ6yAZtfiq2OTEZlgxI-14" target="8yQ6yAZtfiq2OTEZlgxI-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-16" value="c" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8yQ6yAZtfiq2OTEZlgxI-15">
+          <mxGeometry x="-0.2" y="-1" relative="1" as="geometry">
+            <mxPoint x="-2" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8yQ6yAZtfiq2OTEZlgxI-14" target="8yQ6yAZtfiq2OTEZlgxI-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-19" value="n (K)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8yQ6yAZtfiq2OTEZlgxI-18">
+          <mxGeometry x="-0.1111" y="-3" relative="1" as="geometry">
+            <mxPoint y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-14" value="AdaptationRatePerson" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="120" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-17" value="&quot;Personal tendency to adapt quickly to life events.&quot;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="110" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8yQ6yAZtfiq2OTEZlgxI-20" target="8yQ6yAZtfiq2OTEZlgxI-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-36" value="n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8yQ6yAZtfiq2OTEZlgxI-32">
+          <mxGeometry x="0.0143" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-20" value="InitialReaction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="8yQ6yAZtfiq2OTEZlgxI-24" target="8yQ6yAZtfiq2OTEZlgxI-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-28" value="c" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8yQ6yAZtfiq2OTEZlgxI-26">
+          <mxGeometry x="-0.1527" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-34" value="n" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8yQ6yAZtfiq2OTEZlgxI-24" target="8yQ6yAZtfiq2OTEZlgxI-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-24" value="EmotionaReactivity" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="430" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-29" value="&quot;life events are time-discrete transitions that mark the beginning or the end of a specific status.&quot;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="280" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-31" value="&quot;Emotional reaction during or right after the life event.&quot;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="350" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8yQ6yAZtfiq2OTEZlgxI-33" value="&lt;em&gt;&quot;Emotional reactivity&lt;/em&gt; refers to the tendency to experience &lt;br/&gt;frequent and intense emotional arousal. Both the threshold and ease with&lt;br/&gt; which individuals become emotionally aroused and the intensity of &lt;br/&gt;emotional experiences are aspects of emotional reactivity.&quot; (Karrass et al., 2006)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="420" width="450" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="quCtGIW3eCMJiClN3m90-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="quCtGIW3eCMJiClN3m90-1" target="quCtGIW3eCMJiClN3m90-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="quCtGIW3eCMJiClN3m90-8" value="n (F4)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="quCtGIW3eCMJiClN3m90-7">
+          <mxGeometry x="-0.0769" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="quCtGIW3eCMJiClN3m90-1" value="Status" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="quCtGIW3eCMJiClN3m90-6" value="&quot;A status is a nominal variable with at least two levels. (e.g. unmarried, married, widowed... )&quot;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="210" width="160" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="kpa7ql_yANOzpYV5pB9e" name="Theory">
-    <mxGraphModel dx="1036" dy="666" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="895" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -227,6 +366,9 @@
         </mxCell>
         <mxCell id="g48SRaJ_zTbqPzLMM2-U-21" value="EmotionalReactivity" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="10" y="240" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h96uhi2cv-R3_wLjAUcv-1" value="Analyst: Alp" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="40" width="80" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
